@@ -24,5 +24,8 @@
     "build:api": "tsc --resolveJsonModule --skipLibCheck index.ts",
     "build": "yarn build:front && yarn build:api",
     "start": "node index.js"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
