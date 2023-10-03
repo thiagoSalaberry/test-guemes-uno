@@ -1,4 +1,5 @@
-const API_BASE_URL = "http://localhost:4444";
+// const API_BASE_URL = "http://localhost:4444";
+import { API_BASE_URL } from "./rtdb";
 import {rtdb} from "./rtdb";
 
 const state = {
