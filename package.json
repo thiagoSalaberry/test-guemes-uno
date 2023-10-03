@@ -21,7 +21,7 @@
     "build:front": "parcel build ./src/index.html",
     "dev": "nodemon --watch ./index.ts --exec ts-node ./dev.ts",
     "test": "ava",
-    "build:api": "tsc index.ts",
+    "build:api": "tsc --resolveJsonModule --skipLibCheck index.ts",
     "build": "yarn build:front && yarn build:api",
     "start": "node index.js"
   }
