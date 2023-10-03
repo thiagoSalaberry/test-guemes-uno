@@ -51,7 +51,7 @@ var express = require("express");
 var db_1 = require("./db");
 var cors = require("cors");
 var app = express();
-var port = 4444;
+var port = process.env.PORT || 4444;
 app.use(express.static("./dist"));
 app.use(express.json());
 app.use(cors());
