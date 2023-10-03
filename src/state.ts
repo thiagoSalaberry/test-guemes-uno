@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.PORT || "http://localhost:4444";
+const API_BASE_URL = "http://localhost:4444";
 import {rtdb} from "./rtdb";
 
 const state = {
