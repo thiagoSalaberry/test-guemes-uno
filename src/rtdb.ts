@@ -1,16 +1,11 @@
 import firebase from "firebase";
 
-let API_BASE_URL:string;
-if(process.env.ENV_NODE == "production") {
-    API_BASE_URL = "";
-} else {
-    API_BASE_URL = "http://localhost:4444";
-}
+const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:4444";
 
 const app = firebase.initializeApp({
-    apiKey: "Ugnx1TNxmHiz6NwahxO3bs78nPwm2APWNZa2r5Di",
-    authDomain: "guemes.firebaseapp",
-    databaseURL: "https://guemes-default-rtdb.firebaseio.com"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL
 });
 
 const rtdb = firebase.database();
